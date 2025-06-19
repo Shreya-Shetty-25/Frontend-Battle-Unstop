@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+@keyframes enterPortal {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translate(-10%, -10%);
+    opacity: 0;
+  }
+}
+
+.animate-enterPortal {
+  animation: enterPortal 1.2s ease-out forwards;
+}
+
+
