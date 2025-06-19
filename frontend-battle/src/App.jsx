@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import PillProgressSection from "./components/PillProgressSection";
 import ScrollImageTextReveal from "./components/ScrollImageTextReveal";
-
+import AnimeList from "./components/AnimeList";
+import Footer from "./components/Footer";
 function App() {
   const [showLoader, setShowLoader] = useState(true);
 
@@ -28,11 +29,11 @@ function App() {
 
             {/* Placeholder for other sections */}
             <section id="features" className="min-h-screen flex items-center justify-center">
-              <h2 className="text-3xl font-bold">Features Section</h2>
+              <AnimeList />
             </section>
 
-            <section id="contact" className="min-h-screen flex items-center justify-center">
-              <h2 className="text-3xl font-bold">Contact Section</h2>
+            <section id="contact" className="justify-center" style={{ marginBottom: '-100px' }}>
+              <Footer />
             </section>
           </main>
         </div>
